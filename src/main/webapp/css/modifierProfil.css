@@ -1,0 +1,147 @@
+
+form {
+	display: flex;
+    flex-flow: row wrap;
+    max-width: 1024px;
+}
+
+label {
+	font-size: .8rem;
+	margin: .5rem .5rem .5rem 1rem;
+	width: calc(45% - 1.5rem);
+}
+
+input[type="text"], input[type="password"] {
+	margin: .5rem 1rem .5rem .5rem;
+	width: calc(55% - 1.5rem);
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+	outline: 1px solid #5E0DFB;
+}
+
+.form-btns {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 1rem;
+	width: 100%;
+}
+
+form p {
+	font-size: .8rem;
+	margin: .5rem .5rem .5rem 1rem;
+	width: 100%;
+}
+
+#btn-enregistrer, #btn-retour, #btn-supprimer {
+	box-sizing: border-box;
+	font-size: .6rem;
+	padding: .75rem .5rem;
+	text-align: center;
+	margin: .25rem 0;
+}
+
+#btn-enregistrer, #btn-retour {
+	width: calc(25% - .25rem);
+}
+
+#btn-enregistrer {
+	margin-left: .25rem;
+}
+
+#btn-retour {
+	margin-right: .25rem;
+}
+
+#btn-supprimer {
+	margin-left: .25rem;
+	margin-right: .25rem;
+	width: calc(50% - .5rem);
+}
+
+@media screen and (min-width: 360px) { 
+	
+	h1 {
+		font-size: 1.4rem;
+	}
+	
+	.btn {
+		font-size: .8rem;
+	}
+	
+	#btn-enregistrer, #btn-retour, #btn-supprimer {
+		font-size: .7rem;
+	}
+} 
+
+@media screen and (min-width: 1024px) { 
+	
+	h1 {
+		font-size: 1.6rem;
+	}
+	
+	form {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	form, .form-btns {
+		margin-top: 2rem;
+	}
+	
+	label {
+		width: calc(25% - 1.5rem);
+	}
+	
+	input[type="text"], input[type="password"] {
+		width: calc(25% - 1.5rem);
+	}
+	
+	label {
+		font-size: 1rem;
+	}
+	
+	.btn {
+		font-size: .9rem;
+	}
+	
+	#break {
+		flex-basis: 100%;
+		width: 0;
+	}
+	
+	form p {
+		font-size: 1rem;
+	}
+	
+	#btn-enregistrer, #btn-retour, #btn-supprimer {
+		font-size: 1rem;
+		padding: 1rem 2rem;
+		margin: 1rem 0;
+	}
+	
+	#btn-enregistrer {
+		margin-left: 1rem;
+	}
+	
+	#btn-retour {
+		margin-right: 1rem;
+	}
+	
+	#btn-enregistrer, #btn-retour {
+		width: calc(25% - 1rem);
+	}
+	
+	#btn-supprimer {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		width: calc(50% - 2rem);
+	}
+} 
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+form {
+	padding: 0 0.5rem;
+}
+
+form p {
+	font-size: .8rem;
+	margin-bottom: .5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"]:focus {
+	outline: 1px solid #874dfa;
+}
+
+label, select {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+label {
+	font-size: .8rem;
+	margin-right: .5rem;
+	width: calc(30% - 1rem);
+}
+
+select {
+	margin-left: .5rem;
+	width: calc(70% - 1rem);
+}
+
+.filtres-container {
+	display: flex;
+	flex-flow: column;
+}
+
+.filtres-container label {
+	width: 100%;
+}
+
+.filtres-container label:not(:first-child) {
+	margin-left: 1rem;
+}
+
+input[type="submit"] {
+	margin-top: .5rem;
+	padding: .5rem 0;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	background-color: #874dfa;
+	border: 2px solid #874dfa;
+	color: #eee;
+	cursor: pointer;
+}
+
+/* RESPONSIVE DESKTOP 1024PX */
+@media screen and (min-width: 1024px) {
+	
+	form p, label, input[type="submit"] {
+		font-size: 1rem;
+	}
+	
+	form {
+		display: flex;
+		flex-flow: row wrap;
+		margin-bottom: 2rem;
+		position: relative;
+	}
+	
+	.break {
+		flex-basis: 100%;
+		margin-bottom: .5rem;
+	}
+	
+	input[type="text"] {
+		width: 30%;
+	}
+	
+	label {
+		margin-right: 1rem;
+		width: calc(10% - 1rem);
+	}
+	
+	select {
+		margin-left: 1rem;
+		width: calc(20% - 1rem);
+	}
+	
+	.filtres-container {
+		margin-top: 1rem;
+	}
+	
+	input[type="submit"] {
+		height: 5rem;
+		position: absolute;
+		right: 10rem;
+		top: calc(50% - 2.5rem);
+		width: 20%;
+	}
+}

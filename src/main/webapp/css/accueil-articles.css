@@ -1,0 +1,39 @@
+article {
+	border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+article h3 {
+	font-size: 1rem;
+}
+
+article h3 a {
+	color: black;
+}
+
+article p {
+	font-size: .8rem;
+}
+
+@media screen and (min-width: 1024px) {
+	
+	#articles {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	
+	article {
+		box-sizing: border-box;
+		margin: 1rem;
+		width: calc(50% - 2rem);
+	}
+	
+	article h3 {
+		font-size: 1.2rem;
+	}
+	
+	article p {
+		font-size: 1rem;
+	}
+}
